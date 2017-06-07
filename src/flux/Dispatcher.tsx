@@ -6,7 +6,7 @@ let Dispatcher: flux.Dispatcher<IAction> = new flux.Dispatcher();
 Dispatcher.register(function(action: IAction){
     switch(action.actiontype){
         case Actions.CreateTopic:
-            save
+            
     }
 });
 

@@ -4,7 +4,8 @@ export enum Actions {
     CreateTopic,
     AddComment,
     DeleteComment,
-    UpdateTopic
+    UpdateTopic,
+    GetComments
 }
 
 

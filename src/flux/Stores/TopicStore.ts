@@ -26,7 +26,7 @@ export class TopicStore extends ReduceStore<ITopicStoreState, IAction>{
         }
     }
 
-    updateTopic(state: ITopicStoreState, action: IUpdateTopic){
+    updateTopic(state: ITopicStoreState, action: IUpdateTopic){ 
         return state.topic(action.actionDataInterface);
     }
 }

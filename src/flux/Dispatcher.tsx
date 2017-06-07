@@ -1,6 +1,13 @@
 import flux = require('flux');
-import {Actions} from "./Actions";
+import { Actions, IAction } from './Actions';
 
-var Dispatcher: flux.Dispatcher<Actions> = new flux.Dispatcher();
+let Dispatcher: flux.Dispatcher<IAction> = new flux.Dispatcher();
+
+Dispatcher.register(function(action: IAction){
+    switch(action.actiontype){
+        case Actions.CreateTopic:
+            save
+    }
+});
 
 export default Dispatcher;

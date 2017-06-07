@@ -1,4 +1,18 @@
-export enum Actions{
+import { ITopic } from "../types/TopicType";
+
+export enum Actions {
     CreateTopic,
-    AddComment
+    AddComment,
+    DeleteComment,
+    UpdateTopic
+}
+
+
+export abstract class IAction{
+    public actiontype: Actions;
+    public actionDataInterface: any;
+}
+
+export class IUpdateTopic extends IAction{
+    public actionDataInterface: ITopic;
 }

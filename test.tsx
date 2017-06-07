@@ -12,7 +12,3 @@ export class Hello extends React.Component<HelloProps, undefined> {
     }
 }
 
-export class testStore extends{
-
-
-}
